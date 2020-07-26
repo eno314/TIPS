@@ -1,5 +1,27 @@
 # Python dictionary tips
 
+## 内包表記で辞書を作る
+
+```:python
+>>> dict = {key: 0 for key in "abcdedg"}
+>>> dict
+{'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'g': 0}
+```
+
+## 複製する
+
+そのまま代入するとオブジェクトの参照が渡されるため、複製したい場合はcopyを使う
+
+```:python
+>>> dict = {'a': 0, 'b': 1}
+>>> copy = dict.copy()
+>>> copy['a'] = 10
+>>> copy
+{'a': 10, 'b': 1}
+>>> dict
+{'a': 0, 'b': 1}
+```
+
 ## 最大値・最小値を取得
 
 ### keyの最大値・最小値を取得
@@ -30,14 +52,6 @@
 'b'
 >>> min(dict, key=dict.get)
 'a'
-```
-
-## 内包表記で辞書を作る
-
-```:python
->>> dict = {key: 0 for key in "abcdedg"}
->>> dict
-{'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'g': 0}
 ```
 
 ## 辞書の要素を削除する
