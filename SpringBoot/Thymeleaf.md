@@ -5,3 +5,7 @@
 - and, or, !(not)
 - <https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#standard-expression-syntax>
 
+## Expression Utility Objects (ユーティリティオブジェクト)
+
+- There are useful utility object. (便利なユーティリティオブジェクトが用意されている)
+- <https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#expression-utility-objects>
